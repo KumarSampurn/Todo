@@ -7,7 +7,7 @@ export default function Todolist(props) {
       <h3 className='text-center my-3'>Todos item</h3>
       
       {props.todos.map((todo)=>{
-        return <Todo todo= {todo}  onDelete={props.onDelete}/>
+        return <Todo todo= {todo} key={todo.sno} onDelete={props.onDelete}/>
       })}
 
       
