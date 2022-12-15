@@ -13,10 +13,10 @@ export default function Todolist(props) {
       {props.todos.length===0 ?  "No To-dos to Display": 
       props.todos.map((todo)=>{
         return (
-          <>
+         
         <Todo todo= {todo} key={todo.sno} onDelete={props.onDelete}/>
-        <hr/>
-          </>
+        
+          
         )
       })
       }
